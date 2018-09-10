@@ -1,30 +1,59 @@
-// initialize Answer: generate random number btween 0 and 1, multiply by 1, convert to integer with round up
+// *** Guessing Game by Bram Moreinis, Burlington Tech Center Teacher ***
 
-// initialize Turns variable, set to 1
+// *** Initializations ***
 
-// initialize Guess variable, set to 0
+// ** Basic Initializations **
 
-// initialize boolean variable Correct, set to value False
+// var answer integer, set to 100
+// var guess integer, set to 0
+// var turns integer, set to 1
+// var correctAnswer boolean, set to false
 
-// Keep looping while Correct is false
+// ** Advanced Initializations **
 
-    // prompt user for Guess, tell user what to input
+// var averageTurns integer, set to 0
+// var totalTurns integer, set to 0
+// var games integer, set to 0
+// var again string, set to "yes"
+// var playAgain boolean, set to true
+
+
+// *** Game Play ***
+
+// ** Advanced loop start ** 
+// keep looping while playAgain = true
+
+// ** Basic loop start ** 
+// set answer to to random number between 0 and 1, multiply by 100, convert to integer, add 1
+// print answer to console log while testing
+
+// reset correctAnswer to false
+// Keep looping while correctAnswer is false
+
+    // prompt user for guess, tell user what to input
 
     // check if guess is equal to answer
-
-        // if equal, say "Correct" and number of turns
- 
-        // set Correct equal to true to get out of loop
-
+        // if equal, say "Correct!" and say number of turns
+        // set correctAnswer as true to get out of loop
 
     // check if guess greater than answer
-
         // give feedback: go lower
-
     // check if guess lower than answer
-
         // give feedback: go higher
 
     // add one to turns
 
-// thank player for playing
+// ** Basic loop end
+
+// add 1 to games
+// add turns to totalTurns
+// set averageTurns = totalTurns / games
+// say "Your average is " averageTurns  "over " games "games."
+
+// ask to play again (y = yes). 
+// if not y, set playAgain = false'
+
+// ** Advanced loop end
+
+// say thank for playing. 
+// *** Game end
