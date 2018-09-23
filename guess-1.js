@@ -1,19 +1,18 @@
-var Answer = Math.round(Math.random()*100);
-var Turns=0;
-var Correct=false;
-Turns++;
-while (Correct==false) {
-    var Guess = prompt("Guess my integer (between 0 and 100)!");
-    if (Guess == Answer) {
-        alert("CORRECT! You guessed it in "+Turns+" turns.");
-        Correct = true;
+var turns=1;
+var correctAnswer=false;
+var answer = Math.round(Math.random()*100)+1;
+console.log(answer);
+while (correctAnswer==false) {
+    var guess = prompt("Guess my integer (1-100)");
+    if (guess == answer) {
+        correctAnswer = true;
     }
-    else if (Guess > Answer) {
-        alert("Hint: Try a lower number!");
+    if (guess > answer) {
+        alert("Try a lower number!");
     }
-    else if (Guess < Answer) {
-        alert("Hint: Try a higher number!");
+    else if (guess < answer) {
+        alert("Try a higher number!");
     }
-    Turns++;
+    turns++;
 }
-alert("Thank you for playing.");
+alert("Congratulations! You guessed it in "+turns+" turns.");
