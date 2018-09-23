@@ -1,5 +1,5 @@
-var turns=0;
 var correctAnswer=false;
+var turns=0;
 var answer = Math.round(Math.random()*100)+1;
 console.log(answer);
 while (correctAnswer==false) {
