@@ -9,4 +9,4 @@ while (correctAnswer==false) {
     if (guess < answer) alert("Try a higher number!");
     turns++;
 }
-alert("Congratulations! You guessed it in "+turns+" turns.");
+alert("You guessed it in "+turns+" turns.");
