@@ -27,10 +27,10 @@ var playAgain=true;
 
 // *** Game Play ***
 
-// ** Advanced loop start ** 
+// ** Advanced loop start **
 // keep looping while playAgain = true
 while (playAgain==true){
-    // ** Basic loop start ** 
+    // ** Basic loop start **
     // set answer to to random number between 0 and 1, multiply by 100, convert to integer, add 1
     // print answer to console log while testing
     answer=Math.floor(Math.random()*100)+1;
@@ -38,7 +38,7 @@ while (playAgain==true){
     // reset correctAnswer to false
     // Keep looping while correctAnswer is false
     while(correctAnswer==false){
- 
+
         // prompt user for guess, tell user what to input
       guess=prompt("input a guess 1-100");
          // add one to turns
@@ -60,7 +60,7 @@ while (playAgain==true){
             // give feedback: go higher
       alert("go higher");
       }
-     
+
     // ** Basic loop end
     }
    games++;
@@ -71,23 +71,23 @@ while (playAgain==true){
     // add 1 to games
 
     gameOver(turns,games,totalTurns);
- 
+
   // ** Advanced loop end
 }
 
-// say thank for playing. 
+// say thank for playing.
 alert("thanks for playing");
 
 // *** Game end
 
 function gameOver(turns,games,totalTurns){
     playAgain=true;
-  
+
     // say "Your average is " averageTurns  "over " games "games."
     alert("your average is "+averageTurns+" over "+games+" games");
-    // ask to play again (y = yes). 
+    // ask to play again (y = yes).
     again=prompt("want to play again? type y for yes");
-  
+
     // if not y, set playAgain = false'
     if(again!="y"){
       playAgain=false;
