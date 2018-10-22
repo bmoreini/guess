@@ -1,4 +1,4 @@
-// *** Guessing Game by Andrew***
+// *** Guessing Game ***
 
 // *** Initializations ***
 
